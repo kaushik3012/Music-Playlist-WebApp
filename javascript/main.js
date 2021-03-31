@@ -67,7 +67,7 @@ SoundCloudAPI.renderTracks = function(tracks) {
 
         var image_img = document.createElement('img');
         image_img.classList.add('image_img');
-        image_img.src = track.artwork_url || 'http://lorempixel.com/100/100/abstract/';
+        image_img.src = track.artwork_url || 'https://picsum.photos/100/100/?blur';
 
         imageDiv.appendChild(image_img);
 
