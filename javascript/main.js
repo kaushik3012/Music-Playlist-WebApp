@@ -115,7 +115,10 @@ SoundCloudAPI.renderTracks = function(tracks) {
 SoundCloudAPI.getEmbed = function(trackURL) {
 
     SC.oEmbed(trackURL, {
-        auto_play: false 
+        auto_play: true,
+        show_user: false,
+        sharing: false,
+        show_comments: false,
     }).then(function(embed) {
         console.log('oEmbed response: ', embed);
 
