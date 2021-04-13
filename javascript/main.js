@@ -142,7 +142,7 @@ Playlist.clearButtonRender = function() {
     var clearButton;
     clearButton = document.querySelector('.clear-button');
     if(clearButton==null){
-        clearButton = document.createElement('div');
+        clearButton = document.createElement('aside');
         clearButton.classList.add('clear-button');
         clearButton.innerHTML = ("<a href=\"#\">Clear Playlist</a>")
         sideBar.appendChild(clearButton);
@@ -170,3 +170,4 @@ Playlist.clearPlaylist = function() {
 UI.pressEnter();
 UI.submitClick();
 Playlist.clearPlaylist();
+
